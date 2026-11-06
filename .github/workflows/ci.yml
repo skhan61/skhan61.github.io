@@ -30,7 +30,7 @@ jobs:
           persist-credentials: false
       - uses: ruby/setup-ruby@de492cf36cbab201753d720ce4f4e336cd688c94 # v1.336.0
         with:
-          ruby-version: "3.3.4" # the Ruby GitHub Pages uses
+          ruby-version: "3.3" # GitHub Pages uses 3.3.4; runners only ship the latest 3.3.x
           bundler-cache: true
       - name: Build
         run: bundle exec jekyll build --strict_front_matter
