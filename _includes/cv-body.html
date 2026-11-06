@@ -1,0 +1,239 @@
+{% raw %}
+<p> <span><strong>Sayem Khan</strong></span> <br />
+<em>Permanent Resident of the United States</em><br />
+<strong><a
+href="mailto:sayem.eee.kuet@gmail.com">sayem.eee.kuet@gmail.com</a></strong>
+| <strong><a href="https://github.com/skhan61">skhan61</a></strong> |
+Rochester, NY<br />
+</p>
+<h2 class="unnumbered" id="summary">SUMMARY</h2>
+<strong>Forward-deployed AI engineer.</strong> Digital Technologies Lead
+at AlchLight LLC (Rochester, NY), working directly with the lab’s
+engineers, scientists and leadership to turn their needs into working
+software: control and automation for a femtosecond-laser system, AI
+tools for research, and DoD SBIR proposals as Technical Lead. Dual M.S.
+in Computer Science and Mathematics and a B.Sc. in Electrical
+Engineering; 5+ years of teaching and mentoring across three
+institutions. <a href="https://github.com/skhan61"><strong>3,300+ GitHub
+contributions in the last year</strong></a>.
+<h2 class="unnumbered" id="professional-experience">PROFESSIONAL
+EXPERIENCE</h2>
+<ul>
+<li><p><strong>Digital Technologies Lead</strong>, AlchLight LLC,
+Rochester, NY <em>(June 2026 – Present)</em></p>
+<ul>
+<li><p><strong>Laser system integration:</strong> built the software
+that connects the lab’s motion controller, femtosecond laser and 3D
+laser scanners into one system, deployed on the lab’s isolated machines
+and tuned on site with the operators (C#/.NET, Python, gRPC).</p></li>
+<li><p><strong>Scan-to-machining workflow:</strong> desktop applications
+that take a 3D scan of a part, locate it and generate the machine
+program to process it.</p></li>
+<li><p><strong>AI research assistant:</strong> an LLM agent that
+searches the lab’s paper library and the web for a research question and
+returns ready-to-test recipes, improving from the scientists’
+feedback.</p></li>
+<li><p><strong>DoD <a href="https://www.sbir.gov">SBIR</a></strong>
+(Small Business Innovation Research): <strong>Technical Lead</strong> on
+two Phase I proposals submitted in 2026: a digital twin for the Defense
+Logistics Agency and AI-driven adaptive radar waveform design.</p></li>
+<li><p><strong>Agile delivery:</strong> every change issue-tracked,
+code-reviewed and CI-tested; weekly progress and KPI reports to
+leadership; IT infrastructure aligned to <strong><a
+href="https://dodcio.defense.gov/CMMC/">CMMC</a></strong> (DoD
+cybersecurity certification).</p></li>
+</ul></li>
+</ul>
+<h2 class="unnumbered" id="education">EDUCATION</h2>
+<ul>
+<li><p><strong>M.S. in Computer Science &amp; Engineering</strong>, <a
+href="https://en.wikipedia.org/wiki/University_at_Buffalo">The State
+University of New York at Buffalo (SUNY Buffalo)</a>, Buffalo, NY.
+<em>(September 2021 - May 2024)</em></p></li>
+<li><p><strong>M.S. in Mathematics</strong>, <a
+href="https://en.wikipedia.org/wiki/Jahangirnagar_University">Jahangirnagar
+University (JU)</a>, Dhaka, Bangladesh. <em>(January 2017 - March
+2018)</em></p></li>
+<li><p><strong>B.Sc in Electrical and Electronic Engineering</strong>,
+<a
+href="https://en.wikipedia.org/wiki/Khulna_University_of_Engineering_%26_Technology">Khulna
+University of Engineering &amp; Technology (KUET)</a>, Khulna,
+Bangladesh. <em>(February 2012 - October 2016)</em></p></li>
+</ul>
+<h2 class="unnumbered" id="ml-research-projects">ML RESEARCH &amp;
+PROJECTS</h2>
+<ul>
+<li><p><strong><a href="https://numer.ai">Numerai</a> Tournament:
+End-to-End ML System, Live Every Round</strong></p>
+<ul>
+<li><p><strong>What it does:</strong> Numerai is a hedge fund that
+crowdsources its stock-market models through a data-science tournament.
+This system trains, evaluates and selects models on its data and
+<strong>submits predictions every round with no manual
+steps</strong>.</p></li>
+<li><p>Gradient-boosted trees and neural networks, validated
+<strong>walk-forward</strong> on time-ordered data to guard against
+look-ahead leakage.</p></li>
+<li><p>Distributed <strong>GPU training</strong> (Slurm, Ray) and
+scheduled cloud serving (<a href="https://modal.com">Modal</a>), with
+tested, CI-gated code.</p></li>
+</ul></li>
+<li><p><strong>Orchestra: Market-Data Platform for <a
+href="https://signals.numer.ai">Numerai Signals</a></strong> <em>(in
+development)</em></p>
+<ul>
+<li><p>Data service that collects market data for 90,000+ symbols across
+US and international markets into <a
+href="https://github.com/microsoft/qlib">Qlib</a> (Microsoft’s
+open-source quant research platform) data warehouses built with <a
+href="https://duckdb.org">DuckDB</a>, served through a REST API
+(FastAPI).</p></li>
+<li><p>Research service that runs LLM agents (Microsoft <a
+href="https://github.com/microsoft/RD-Agent">RD-Agent</a>) to propose
+factors and models from papers and backtest them on that data, as
+candidate signals for Numerai Signals, Numerai’s tournament for stock
+signals built from your own data.</p></li>
+<li><p>Containerized services (Docker Compose).</p></li>
+</ul></li>
+<li><p><a href="https://github.com/skhan61/Hangman"><strong>Hangman AI
+Solver - Position-wise Neural Approach</strong></a></p>
+<ul>
+<li><p><strong>Problem:</strong> win <a
+href="https://en.wikipedia.org/wiki/Hangman_(game)">Hangman</a> on 1,000
+games of words never seen in training (250K-word dictionary, black-box
+API, 6 wrong guesses allowed) against an 18% baseline.</p></li>
+<li><p><strong><a
+href="https://github.com/skhan61/HangmanRL2">Meta-reinforcement learning
+(RL<sup>2</sup>)</a>:</strong> a recurrent policy that adapts within
+each game reached 45% on unseen words; the 26-letter action space
+limited sequential RL.</p></li>
+<li><p><strong>Reframed the problem</strong> after <strong>BERT’s masked
+language modeling</strong>: predict the letter at every hidden position.
+A BiLSTM trained on 21M game states from 227K words, generated with 13
+masking strategies, reached a <strong>67.2% official win rate, 3.7× the
+baseline</strong>.</p></li>
+<li><p><strong>Tested what else helps:</strong> heuristic baselines
+(letter frequency, n-grams, ensembles) stayed at 15–25%; self-supervised
+contrastive training added 0.8 points at 4.7× the training time, so
+supervised training was kept.</p></li>
+<li><p>Released as <a
+href="https://doi.org/10.5281/zenodo.17336653"><strong>Hangman AI Solver
+(v1.0)</strong></a>, Zenodo, October 2025 (PyTorch Lightning, 5.2M
+parameters).</p></li>
+</ul></li>
+</ul>
+<h2 class="unnumbered" id="research-articles-abstracts">RESEARCH
+ARTICLES &amp; ABSTRACTS</h2>
+<ul>
+<li><p>Nur, N. B.; Bachmann, C. M.; Tyler, A. C.; Miller, A.;
+<strong>Khan, S.</strong>; Union, K. E.; Owens-Rios, W. A.; Bauch, T.
+D.; Lapszynski, C. S. <a
+href="https://doi.org/10.1029/2024JG008421"><strong>Mapping Soil Organic
+Matter, Total Carbon, and Total Nitrogen in Salt Marshes Using UAS-Based
+Hyperspectral Imaging.</strong></a> <em>Journal of Geophysical Research:
+Biogeosciences</em>, 130, e2024JG008421, 2025.</p></li>
+<li><p>Nur, N.B.; Bachmann, C.M.; Tyler, A.C.; Miller, A.; Union, K.E.;
+<strong>Khan, S.</strong>; Owens-Rios, W.A.; Bauch, T.D. <a
+href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1554781"><strong>Enhancing
+Wetland Soil Property Estimates with UAS Hyperspectral Imaging in
+Preparation for the NASA SBG Mission</strong></a> <em>Proceedings of the
+AGU Fall Meeting, 2024</em>. Ed. American Geophysical Union. Washington,
+D.C.</p></li>
+</ul>
+<h2 class="unnumbered" id="technical-skills">TECHNICAL SKILLS</h2>
+<table>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Languages:</strong></td>
+<td style="text-align: left;"> <a
+href="https://www.python.org">Python</a>, <a
+href="https://isocpp.org">C++</a>, <a
+href="https://www.gnu.org/software/bash/">Bash</a>, SQL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GenAI / Agents:</strong></td>
+<td style="text-align: left;"> LLM APIs (<a
+href="https://docs.anthropic.com">Anthropic</a>, <a
+href="https://platform.openai.com">OpenAI</a>), <a
+href="https://github.com/anthropics/anthropic-sdk-python">Anthropic
+SDK</a>, <a href="https://modelcontextprotocol.io">MCP</a> (Model
+Context Protocol), agent frameworks (Microsoft <a
+href="https://github.com/microsoft/RD-Agent">RD-Agent</a>), RAG, Prompt
+Engineering</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>AI-Native Dev:</strong></td>
+<td style="text-align: left;"> <a
+href="https://www.anthropic.com/claude-code">Claude Code</a>, <a
+href="https://cursor.com">Cursor</a>, <a
+href="https://github.com/features/copilot">GitHub Copilot</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ML/DL:</strong></td>
+<td style="text-align: left;"> <a
+href="https://pytorch.org">PyTorch</a>, <a
+href="https://github.com/Lightning-AI/pytorch-lightning">PyTorch
+Lightning</a>, <a href="https://scikit-learn.org">scikit-learn</a>, <a
+href="https://lightgbm.readthedocs.io">LightGBM</a>, <a
+href="https://xgboost.ai">XGBoost</a>, <a
+href="https://catboost.ai">CatBoost</a>, <a
+href="https://huggingface.co/docs/transformers">Transformers</a>, <a
+href="https://wandb.ai">Weights &amp; Biases</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Data Engineering:</strong></td>
+<td style="text-align: left;"> market-data warehouses (<a
+href="https://github.com/microsoft/qlib">Qlib</a>, <a
+href="https://duckdb.org">DuckDB</a>), <a
+href="https://numpy.org">NumPy</a>, <a
+href="https://pandas.pydata.org">pandas</a>, <a
+href="https://www.trychroma.com">Chroma</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>APIs &amp;
+Integration:</strong></td>
+<td style="text-align: left;"> REST APIs (<a
+href="https://fastapi.tiangolo.com">FastAPI</a>), <a
+href="https://grpc.io">gRPC</a>, integration of vendor instruments and
+their SDKs</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cloud &amp; Infra:</strong></td>
+<td style="text-align: left;"> <a
+href="https://www.docker.com">Docker</a>, <a
+href="https://modal.com">Modal</a> (serverless cloud), <a
+href="https://www.ray.io">Ray</a>, <a
+href="https://slurm.schedmd.com">Slurm</a> (GPU cluster), <a
+href="https://github.com/features/actions">GitHub Actions</a>, <a
+href="https://git-scm.com">Git</a>, <a
+href="https://circleci.com">CircleCI</a>, <a
+href="https://n8n.io">n8n</a>, <a
+href="https://www.latex-project.org">LaTeX</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Security:</strong></td>
+<td style="text-align: left;"> <a
+href="https://dodcio.defense.gov/CMMC/">CMMC</a> compliance, secure
+handling of API keys and passwords</td>
+</tr>
+</tbody>
+</table>
+<h2 class="unnumbered" id="employments">EMPLOYMENTS</h2>
+<ul>
+<li><p><strong>Volunteer Research Engineer</strong>, RoCAL (Robotic
+Collaboration and Autonomy Lab), Rochester Institute of Technology
+(RIT), January 2026 – May 2026</p></li>
+<li><p><strong>Voluntary Research Assistant</strong>, Chester F. Carlson
+Center for Imaging Science, Rochester Institute of Technology (RIT),
+September 2024 – December 2025</p></li>
+<li><p><strong>Graduate Teaching Assistant</strong>, Computer Science,
+SUNY Buffalo, NY, September 2021 – May 2024</p></li>
+<li><p><strong>Graduate Teaching Fellow</strong>, Mathematics, UMass
+Dartmouth, MA, September 2019 – May 2021</p></li>
+<li><p><strong>Adjunct Faculty (Mathematics)</strong>, Department of
+Mechanical Engineering, Sonargaon Univ., Dhaka, June 2018 – May
+2019</p></li>
+<li><p><strong>Assistant Engineer</strong>, Power Transformer Division,
+Energypac Engineering, Dhaka, November 2016 – April 2018</p></li>
+</ul>
+{% endraw %}
