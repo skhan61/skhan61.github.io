@@ -34,5 +34,8 @@ jobs:
           bundler-cache: true
       - name: Build
         run: bundle exec jekyll build --strict_front_matter
-      - name: Check links, images and scripts (external links not checked)
-        run: bundle exec htmlproofer _site --disable-external --checks Links,Images,Scripts
+      # External links are not checked, so third-party sites cannot fail CI.
+      # --allow-missing-href: Hydejack's own templates have <a> tags filled in by JavaScript.
+      # --no-enforce-https: the shipped license texts link to http:// pages.
+      - name: Check links, images and scripts
+        run: bundle exec htmlproofer _site --disable-external --checks Links,Images,Scripts --allow-missing-href --no-enforce-https
