@@ -69,9 +69,7 @@ copyright:             © 2026 Sayem Khan.
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
 
-# Pagination configuration (used by the `blog` layout)
-paginate:              10
-paginate_path:         /blog/:num/
+# No pagination: /blog/ uses the `list` layout, which lists every post on one page.
 
 
 # Theme
