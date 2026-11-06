@@ -315,6 +315,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - functions
+  - README.md
+  - .github
 include:
   - _routes.json
   - .well-known

@@ -1,0 +1,38 @@
+# Build the site the way GitHub Pages does (github-pages gem, remote theme) and
+# check the result with html-proofer. Pages itself still deploys from main.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: build and check
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      JEKYLL_ENV: production
+      PAGES_REPO_NWO: ${{ github.repository }}
+      JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ruby/setup-ruby@de492cf36cbab201753d720ce4f4e336cd688c94 # v1.336.0
+        with:
+          ruby-version: "3.3.4" # the Ruby GitHub Pages uses
+          bundler-cache: true
+      - name: Build
+        run: bundle exec jekyll build --strict_front_matter
+      - name: Check links, images and scripts (external links not checked)
+        run: bundle exec htmlproofer _site --disable-external --checks Links,Images,Scripts
