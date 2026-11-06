@@ -95,6 +95,13 @@ accent_color:          rgb(245,158,11)
 # Defaults to `accent_color`.
 theme_color:           rgb(15,42,46)
 
+# Icons (Aparajita flower). The SVG tab icon is added in _includes/my-head.html.
+favicon:               /assets/icons/favicon.ico
+apple_touch_icon:      /assets/icons/apple-touch-icon.png
+
+# Splash background of the installed web app (assets/site.webmanifest).
+background_color:      rgb(15,42,46)
+
 # IMPORTANT:
 # As of Hydejack 9.2, Google Fonts are turned off by default due to a stronger focus on privacy.
 # Hydejack will use the default font of your visitor's operating system instead.
