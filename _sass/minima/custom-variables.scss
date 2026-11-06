@@ -1,0 +1,29 @@
+// Palette A: deep navy + muted gold.
+// The dark skin copies its $dm-* values into these names before this file loads,
+// so these are the names that take effect.
+$base-font-family: "Fira Sans", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+$background-color:      #0f1a2b;
+$code-background-color: #16233a;
+$heading-color:         #eef1f5;
+$text-color:            #d3d9e2;
+$site-title-color:      #c9a45c;
+
+$brand-color:           #8e9aac;
+$brand-color-light:     #a9b3c2;
+$brand-color-dimmed:    #8e9aac;
+$brand-color-dark:      #26354d;
+
+$link-base-color:       #d4b06a;
+$link-visited-color:    #c9a45c;
+$link-hover-color:      #eef1f5;
+
+$border-color-01:       #26354d;
+$border-color-02:       #8e9aac;
+$border-color-03:       #c9a45c;
+
+$table-text-color:      #d3d9e2;
+$table-zebra-color:     #132036;
+$table-header-bg-color: #1a2942;
+$table-header-border:   #26354d;
+$table-border-color:    #26354d;

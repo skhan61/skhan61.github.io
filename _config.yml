@@ -1,0 +1,20 @@
+title: Sayem Khan
+author:
+  name: Sayem Khan
+
+remote_theme: jekyll/minima@4de322363fca5927e6f4012cb94f6dad69ab5e6c
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+minima:
+  skin: dark
+  nav_pages:
+    - index.md
+    - cv.md
+    - blog.md
+  social_links:
+    - title: GitHub
+      icon: github
+      url: "https://github.com/skhan61"
