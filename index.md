@@ -1,5 +1,7 @@
 ---
-layout: base
+layout: about
+title: Sayem Khan
+description: Agentic AI Engineer · ML Researcher · Founder
 ---
 
 I'm Sayem Khan. I build agentic AI systems and do machine learning research.
