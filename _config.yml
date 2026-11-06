@@ -1,8 +1,6 @@
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge
-plugins:
-  - jekyll-paginate
 
 # Permalinks
 permalink:        pretty
@@ -17,8 +15,6 @@ baseurl:          ""
 author:
   name:           'Sayem Khan'
   url:            https://github.com/skhan61
-
-paginate:         5
 
 # Not under `github:`, which GitHub Pages fills with repo metadata.
 github_profile:   https://github.com/skhan61
