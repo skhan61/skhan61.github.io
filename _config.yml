@@ -83,9 +83,9 @@ remote_theme: hydecorp/hydejack@v9.2.1
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-# A plain dark teal instead of the photo.
+# Dark teal with the Aparajita flower art (the sidebar shows the image's center strip).
 accent_image:
-  background:          rgb(15,42,46)
+  background:          "rgb(15,42,46) url(/assets/img/aparajita-sidebar.svg) center / cover"
   overlay:             false
 # Amber.
 accent_color:          rgb(245,158,11)
