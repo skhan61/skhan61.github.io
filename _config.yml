@@ -12,7 +12,7 @@ title:            Sayem Khan
 tagline:          'Agentic AI Engineer / ML Researcher / Builder'
 description:      'Agentic AI Engineer / ML Researcher / Builder'
 url:              https://skhan61.github.io
-baseurl:          /
+baseurl:          ""
 
 author:
   name:           'Sayem Khan'
