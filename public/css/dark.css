@@ -253,14 +253,22 @@ tbody tr:nth-child(odd) th {
   text-decoration: none;
 }
 
-/* The PDF is a white document; invert it so it reads dark, then turn the hues back. */
-.cv-frame {
-  display: block;
-  width: 100%;
-  height: calc(100vh - 12rem);
-  min-height: 32rem;
+/* The frame carries the border; the PDF inside is inverted to read dark. */
+.cv-wrap {
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
+  background-color: #141414;
+}
+
+/* Invert, turn the hues back, and push the viewer's gray margin outside the clip. */
+.cv-frame {
+  display: block;
+  width: calc(100% + 32px);
+  height: calc(100vh - 12rem);
+  min-height: 32rem;
+  margin: -8px -16px;
+  border: 0;
   background-color: #fff;
   filter: invert(0.9) hue-rotate(180deg);
 }
@@ -284,3 +292,35 @@ tbody tr:nth-child(odd) th {
 .highlight .gd { color: #fca5a5; }
 .highlight .gi { color: #86efac; }
 .highlight .hll { background-color: #1e293b; }
+
+/* ---- Phones: name, then one row of tabs ---- */
+
+@media (max-width: 47.99em) {
+  .sidebar {
+    padding: 1.25rem 1rem 0.75rem;
+  }
+  .sidebar .lead {
+    margin-bottom: 0.75rem;
+  }
+  .sidebar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    margin-bottom: 0;
+  }
+  .sidebar .sidebar-nav-item {
+    margin-left: 0;
+    padding: 0.25rem 0;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .sidebar .sidebar-nav-item.active {
+    border-bottom-color: var(--accent);
+  }
+  .sidebar-sticky > p {
+    display: none;
+  }
+  .content {
+    padding-top: 1.75rem;
+  }
+}
