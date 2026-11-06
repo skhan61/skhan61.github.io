@@ -1,0 +1,110 @@
+/*
+ * Dark content area for Hyde, and the Fira Sans body font.
+ * Every color override lives here; poole.css and hyde.css stay as shipped.
+ */
+
+html,
+.pagination {
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+}
+
+body {
+  color: #d0d0d0;
+  background-color: #1b1d21;
+}
+
+h1, h2, h3, h4, h5, h6,
+strong,
+.page-title,
+.post-title,
+.post-title a,
+.related-posts li a:hover {
+  color: #eaeaea;
+}
+
+a,
+.related-posts li a:hover small {
+  color: #9cc3e6;
+}
+
+hr {
+  border-top-color: #33363c;
+  border-bottom-color: #1b1d21;
+}
+
+abbr,
+abbr[title] {
+  color: #a0a0a0;
+  border-bottom-color: #33363c;
+}
+
+code {
+  color: #e3a6ad;
+  background-color: #26292f;
+}
+
+pre,
+.highlight {
+  color: #d0d0d0;
+  background-color: #26292f;
+}
+
+blockquote,
+.post-date,
+.related-posts li small,
+.pagination {
+  color: #9a9a9a;
+}
+
+blockquote {
+  border-left-color: #3a3d44;
+}
+
+table,
+td,
+th {
+  border-color: #33363c;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #22252a;
+}
+
+.message {
+  color: #b0b0b0;
+  background-color: #26292f;
+}
+
+.related {
+  border-top-color: #33363c;
+}
+
+.pagination-item {
+  border-color: #33363c;
+}
+
+a.pagination-item:hover {
+  background-color: #26292f;
+}
+
+.cv-frame {
+  display: block;
+  width: 100%;
+  height: 80vh;
+  border: 0;
+  background-color: #1b1d21;
+}
+
+/* Code highlighting (rouge), dark */
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cs, .highlight .cp { color: #7f848e; font-style: italic; }
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt { color: #c49cde; }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr { color: #a8c98a; }
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #e0b070; }
+.highlight .nf, .highlight .fm, .highlight .nc, .highlight .nn { color: #8cbfe8; }
+.highlight .nb, .highlight .bp, .highlight .no, .highlight .na, .highlight .nt { color: #e8a87c; }
+.highlight .o, .highlight .ow, .highlight .p { color: #b8bcc4; }
+.highlight .err { color: #f08a8a; background-color: transparent; }
+.highlight .gd { color: #f08a8a; }
+.highlight .gi { color: #a8c98a; }
+.highlight .hll { background-color: #2f333a; }
