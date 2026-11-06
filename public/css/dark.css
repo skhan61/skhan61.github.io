@@ -108,3 +108,11 @@ a.pagination-item:hover {
 .highlight .gd { color: #f08a8a; }
 .highlight .gi { color: #a8c98a; }
 .highlight .hll { background-color: #2f333a; }
+
+/* Sidebar text at the top of the sidebar (Hyde pins it to the bottom). */
+@media (min-width: 48em) {
+  .sidebar-sticky {
+    top: 2.5rem;
+    bottom: auto;
+  }
+}
