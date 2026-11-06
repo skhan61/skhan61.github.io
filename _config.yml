@@ -83,17 +83,17 @@ remote_theme: hydecorp/hydejack@v9.2.1
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-# A plain color instead of the photo: the README banner's background.
+# A plain dark teal instead of the photo.
 accent_image:
-  background:          rgb(13,17,23)
+  background:          rgb(15,42,46)
   overlay:             false
-# The banner's cyan, #22d3ee.
-accent_color:          rgb(34,211,238)
+# Amber.
+accent_color:          rgb(245,158,11)
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
 # Defaults to `accent_color`.
-theme_color:           rgb(13,17,23)
+theme_color:           rgb(15,42,46)
 
 # IMPORTANT:
 # As of Hydejack 9.2, Google Fonts are turned off by default due to a stronger focus on privacy.
