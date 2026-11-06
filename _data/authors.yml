@@ -1,0 +1,16 @@
+# Authors
+# =======================================================================================
+# The first author is the site's default author.
+
+sayem:
+  name:              Sayem Khan
+  email:             sayem.eee.kuet@gmail.com
+
+  about:             |
+    Machine learning and AI engineer, forward-deployed in a laser physics R&D lab.
+
+  picture:           /assets/img/me.jpg
+
+  social:
+    github:          skhan61
+    email:           sayem.eee.kuet@gmail.com

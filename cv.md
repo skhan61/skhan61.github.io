@@ -3,6 +3,6 @@ layout: page
 title: CV
 ---
 
-<p class="cv-actions"><a class="cv-button" href="{{ '/assets/cv/sayem_khan_cv.pdf' | relative_url }}" download>Download PDF</a></p>
+[Download the PDF](/assets/cv/sayem_khan_cv.pdf){:.no-push-state}
 
-<div class="cv-wrap"><iframe class="cv-frame" src="{{ '/assets/cv/sayem_khan_cv.pdf' | relative_url }}#toolbar=0&navpanes=0&view=FitH" title="Sayem Khan CV"></iframe></div>
+<iframe src="/assets/cv/sayem_khan_cv.pdf" title="Sayem Khan CV" width="100%" height="900"></iframe>
