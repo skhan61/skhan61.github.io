@@ -2,7 +2,7 @@
 # this pins the same version (https://pages.github.com/versions.json).
 source "https://rubygems.org"
 
-gem "github-pages", "= 232", group: :jekyll_plugins
+gem "github-pages", "233", group: :jekyll_plugins
 
 group :test do
   gem "html-proofer", "~> 5.2"
